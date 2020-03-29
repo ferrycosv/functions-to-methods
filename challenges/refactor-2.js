@@ -6,7 +6,7 @@ const mergeArrays = (arr1, arr2) => {
 
 const obj = {
   array: [3],
-  mergeArrays: function (arrToMerge) { }
+  mergeArrays: function (arrToMerge) { this.array = [...this.array, ...arrToMerge] }
 }
 
 obj.mergeArrays([2]);
